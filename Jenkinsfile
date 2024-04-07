@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('1-start'){
 			steps{
-				checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkins-id', url: 'https://github.com/etechConsultingDevops/team9app.git']])
+				checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'new_id', url: 'https://github.com/etech-technology/team9app1.git']])
 			}
 		}
 		stage('2-johnst'){
